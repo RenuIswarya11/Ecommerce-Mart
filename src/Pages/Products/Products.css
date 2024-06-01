@@ -1,0 +1,130 @@
+/* Styles for small devices */
+@media (max-width: 700px) and (max-height: 650px) {
+  .contentAndFilterDiv {
+    display: none; /* Hide contentAndFilterDiv on small devices */
+  }
+
+  .filter-div {
+    display: none; /* Hide filter-div on small devices */
+  }
+}
+
+.clearFilter {
+  display: flex;
+  gap: 10px;
+}
+
+.CheckBoxFilterDiv,
+.radioFilterDiv {
+  display: none; /* Hide filter sections by default */
+}
+
+.filter-div,
+.price-div,
+.CheckBoxFilterDiv,
+.radioFilterDiv {
+  margin-top: 10px;
+}
+
+.clearFilterBtn {
+  padding: 5px 5px;
+  border-radius: 5px;
+  background-color: rgb(226, 59, 162);
+  color: white;
+  border: white;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+.content-filter-wrapper {
+  margin-top: 50px;
+}
+
+.products {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 3px solid rgb(255, 200, 234);
+  width: calc(50% - 20px); /* Adjust width for small devices */
+  max-width: 300px; /* Limit maximum width */
+  height: 450px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: rgb(226, 59, 162);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-star {
+  color: green;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+/* Styles for medium and large devices */
+@media (min-width: 768px) {
+  .content-filter-wrapper {
+    display: flex;
+    flex-direction: row; /* Ensure filter div and products are side by side */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .CheckBoxFilterDiv,
+  .radioFilterDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contentAndFilterDiv {
+    display: block; /* Show filter div */
+    flex: 0 0 20%;
+    padding: 20px;
+  }
+
+  .products {
+    margin-top: 50px;
+    margin-left: 10px; /* Add some space to separate filter and products */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .product-card {
+    width: calc(33.33% - 20px); /* Adjust width for medium devices */
+  }
+}

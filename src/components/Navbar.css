@@ -1,0 +1,73 @@
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; /* Padding adjusted for responsiveness */
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(3px); /* Add backdrop-filter for a blurred effect */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the navbar appears on top of other elements */
+    height: 10vh; /* Set the height of the navbar relative to viewport height */
+  }
+  
+  .logo-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileDetails-div {
+    display: flex;
+  }
+  
+  .logo-div h2 {
+    color: rgba(255, 0, 157, 0.64);
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem; /* Adjust font size for responsiveness */
+    font-weight: 800;
+  }
+  
+  .searchbar {
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    border: 2px solid rgb(226, 59, 162);
+    padding: 0.5rem 1rem; /* Adjust padding for responsiveness */
+    border-radius: 1rem; /* Adjust border radius for responsiveness */
+    width: 100%; /* Make searchbar width 100% for responsiveness */
+    max-width: 400px; /* Set max width to prevent it from stretching too much */
+  }
+  
+  .searchbtn {
+    border: 2px solid rgb(226, 59, 162);
+    padding: 0.5rem 1rem; /* Adjust padding for responsiveness */
+    background-color: rgb(226, 59, 162);
+    color: #ffffff;
+    border-radius: 1rem; /* Adjust border radius for responsiveness */
+    height: 3rem; /* Adjust height for responsiveness */
+    margin-left: 1rem; /* Adjust margin for responsiveness */
+    cursor: pointer;
+  }
+  
+  .profileDetails-div p {
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    color: rgba(211, 1, 131, 0.712);
+    text-decoration: none;
+    margin-right: 1rem; /* Adjust margin for responsiveness */
+  }
+  
+  .navLinkStyle {
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navLinkStyle p {
+    text-decoration: none; /* Remove underline */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .searchbar {
+      display: none; /* Hide search bar on smaller screens */
+    }
+  }
+  
